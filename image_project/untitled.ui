@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>943</width>
+    <height>810</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="load">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PICTURES</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>40</y>
+      <width>551</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>10</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EFFECTS</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>570</y>
+      <width>440</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string> CROP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cropl">
+         <property name="text">
+          <string>LEFT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cropr">
+         <property name="text">
+          <string>RIGHT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cropt">
+         <property name="text">
+          <string>TOP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cropb">
+         <property name="text">
+          <string>BOTTOM</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="rotate">
+       <property name="text">
+        <string>ROTATION</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string> MIRRORING</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="mirrorv">
+         <property name="text">
+          <string>VERT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="mirrorh">
+         <property name="text">
+          <string>HORZ</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="save">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SAVE</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>570</y>
+      <width>241</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="brightup">
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>BRIGHTNESS</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="brightdown">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="contup">
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>CONTRAST</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="contdown">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QCheckBox" name="enhancement">
+         <property name="text">
+          <string>ENHACEMENT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="blur">
+         <property name="text">
+          <string>BLUR</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>40</y>
+      <width>181</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-699</y>
+       <width>158</width>
+       <height>2695</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="filtre1">
+        <property name="text">
+         <string>GOLDSPICE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="f2">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="filtre2">
+        <property name="text">
+         <string>DAZZLEJIG</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="f3">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QCheckBox" name="filtre3">
+        <property name="text">
+         <string>SUNSHY</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="f4">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QCheckBox" name="filtre4">
+        <property name="text">
+         <string>SUGARGAZE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="f5">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QCheckBox" name="filtre5">
+        <property name="text">
+         <string>GENTLEDROP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="f6">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QCheckBox" name="filtre6">
+        <property name="text">
+         <string>BEETLENOSE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QLabel" name="f7">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QCheckBox" name="filtre7">
+        <property name="text">
+         <string>JELLYSHEEN</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="0">
+       <widget class="QLabel" name="f8">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="QCheckBox" name="filtre8">
+        <property name="text">
+         <string>QUICKDROP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="f9">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="0">
+       <widget class="QCheckBox" name="filtre9">
+        <property name="text">
+         <string>WILLOWRING</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="0">
+       <widget class="QLabel" name="f10">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="0">
+       <widget class="QCheckBox" name="filtre10">
+        <property name="text">
+         <string>SNOWLEAF</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="0">
+       <widget class="QLabel" name="f11">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="0">
+       <widget class="QCheckBox" name="filtre11">
+        <property name="text">
+         <string>BLACKBUG</string>
+        </property>
+       </widget>
+      </item>
+      <item row="22" column="0">
+       <widget class="QLabel" name="f12">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="23" column="0">
+       <widget class="QCheckBox" name="filtre12">
+        <property name="text">
+         <string>HONEYFROST</string>
+        </property>
+       </widget>
+      </item>
+      <item row="24" column="0">
+       <widget class="QLabel" name="f13">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="25" column="0">
+       <widget class="QCheckBox" name="filtre13">
+        <property name="text">
+         <string>QUICKMINT</string>
+        </property>
+       </widget>
+      </item>
+      <item row="26" column="0">
+       <widget class="QLabel" name="f14">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="27" column="0">
+       <widget class="QCheckBox" name="filtre14">
+        <property name="text">
+         <string>CLEARBELL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="28" column="0">
+       <widget class="QLabel" name="f15">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="29" column="0">
+       <widget class="QCheckBox" name="filtre15">
+        <property name="text">
+         <string>SILVERWISP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="30" column="0">
+       <widget class="QLabel" name="f16">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="31" column="0">
+       <widget class="QCheckBox" name="filtre16">
+        <property name="text">
+         <string>NIGHTMOON</string>
+        </property>
+       </widget>
+      </item>
+      <item row="32" column="0">
+       <widget class="QLabel" name="f17">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="33" column="0">
+       <widget class="QCheckBox" name="filtre17">
+        <property name="text">
+         <string>FLUTTERCHEEKS</string>
+        </property>
+       </widget>
+      </item>
+      <item row="34" column="0">
+       <widget class="QLabel" name="f18">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="35" column="0">
+       <widget class="QCheckBox" name="filtre18">
+        <property name="text">
+         <string>APPLEGLEAM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="36" column="0">
+       <widget class="QLabel" name="f19">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="37" column="0">
+       <widget class="QCheckBox" name="filtre19">
+        <property name="text">
+         <string>TWINKLEFLUFF</string>
+        </property>
+       </widget>
+      </item>
+      <item row="38" column="0">
+       <widget class="QLabel" name="f20">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="39" column="0">
+       <widget class="QCheckBox" name="filtre20">
+        <property name="text">
+         <string>SPARKLEFLOWER</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="f1">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>943</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
